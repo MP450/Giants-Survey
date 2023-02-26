@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>San Francisco Giants Survey</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-	<h1 id="title">San Francisco Giants Survey</h1>
-    <p id="description">Thank you for taking the survey!</p>
+    <div class="header">
+	    <h1 id="title">San Francisco Giants Survey</h1>
+      <p id="description">Thank you for taking this survey!</p>
+    </div>
     <form id="survey-form">
-
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" required placeholder="John Doe"/></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="john-doe@gmail.com"/></label>
+        <label for="age" id="number-label">Enter your age: <input id="number" type="number" min="13" max="120" placeholder="18"></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What is your favorite stadium food?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Hot Dog</option>
+            <option value="2">Garlic Fries</option>
+            <option value="3">Crab Sandwich</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Do you keep score at a ball game?</label>
+        <label for="always"><input id="always" type="radio" name="score-type" class="inline" /> Always</label>
+        <label for="sometimes"><input id="sometimes" type="radio" name="score-type" class="inline" /> Sometimes</label>
+        <label for="never"><input id="never" type="radio" name="score-type" class="inline" /> Never</label>
+        </label>
+      </fieldset>
     </form>
   </body>
 </html>
