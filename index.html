@@ -31,11 +31,29 @@
       </fieldset>
       <fieldset>
         <label>Do you keep score at a ball game?</label>
-        <label for="always"><input id="always" type="radio" name="score-type" class="inline" /> Always</label>
-        <label for="sometimes"><input id="sometimes" type="radio" name="score-type" class="inline" /> Sometimes</label>
-        <label for="never"><input id="never" type="radio" name="score-type" class="inline" /> Never</label>
+        <label for="always"><input id="always" type="radio" name="score-type" class="inline" value="0"/> Always</label>
+        <label for="sometimes"><input id="sometimes" type="radio" name="score-type" class="inline" value="1"/> Sometimes</label>
+        <label for="never"><input id="never" type="radio" name="score-type" class="inline" value="2"/> Never</label>
         </label>
       </fieldset>
+      <fieldset>
+        <label>What are your favorite positions?</label>
+        <label><input type="checkbox" value="0" class="inline">Designated Hitter</label>
+        <label><input type="checkbox" value="1" class="inline">Pitcher</label>
+        <label><input type="checkbox" value="2" class="inline">Catcher</label>
+        <label><input type="checkbox" value="3" class="inline">First Base</label>
+        <label><input type="checkbox" value="4" class="inline">Second Base</label>
+        <label><input type="checkbox" value="5" class="inline">Third Base</label><label><input type="checkbox" value="6" class="inline">Shortstop</label>
+        <label><input type="checkbox" value="7" class="inline">Left Field</label>
+        <label><input type="checkbox" value="8" class="inline">Center Field</label>
+        <label><input type="checkbox" value="9" class="inline">Rightfield</label>
+      </fieldset>
+      <fieldset>
+        <label>What is your favorite Giants memory?</label>
+        <textarea rows="5">
+        </textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit Survey</button>
     </form>
   </body>
 </html>
